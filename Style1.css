@@ -1,0 +1,415 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+.custom-body {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-image: url("img/wanderer-of-the-ruined-path-ur-1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.name {
+  display: flex;
+}
+
+.custom-nav ul {
+  display: flex;
+}
+
+.custom-nav ul li {
+  list-style: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 20px;
+}
+
+.custom-nav ul li a {
+  border-color: #ff000000;
+  border-style: solid;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.custom-nav ul li a:hover {
+  border-color: rgb(255, 0, 0);
+  transition: 0.5s;
+  background: linear-gradient(90deg, #000, #ff0000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 1s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.custom-h1 {
+  color: #fdfdfd;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+span {
+  font-weight: bolder;
+  color: rgb(255, 0, 0);
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------home-----------------*/
+
+#home {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 25px;
+}
+
+#home .custom-div {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  /*padding-left:  10px;
+    text-align: center;*/
+}
+
+.custom-h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-p {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  margin-top: 40px;
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.image img {
+  position: absolute;
+  top: 30px;
+  display: block;
+  width: 70%;
+  object-fit: cover;
+}
+
+.image .imagecover {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(transparent, rgb(0, 0, 0));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  mix-blend-mode: soft-light;
+}
+
+/*------------------About me---------------*/
+
+#AboutMe {
+  margin-top: 25px;
+  padding-top: 1px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 25px;
+}
+
+#AboutMe h4 {
+  padding-top: 20px;
+}
+
+#AboutMe .custom-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#AboutMe .custom-div .Skills,
+.Experience,
+.Education {
+  width: 400px;
+  height: 400px;
+  margin: 25px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: l;
+  border-radius: 25px;
+  background: radial-gradient(transparent, rgb(0, 0, 0));
+}
+
+/*------------------languages---------------*/
+
+#Languages {
+  margin-top: 25px;
+  padding-top: 1px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 25px;
+}
+
+#Languages .icons {
+  height: 250px;
+  border-radius: 25px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Languages .icons img {
+  margin: 20px;
+  width: 100px;
+  transition: 0.5s;
+}
+
+#Languages .icons img:hover {
+  margin: 30px;
+  width: 150px;
+  transition: 0.5s;
+}
+
+/*-----------------------MyWork-------------------*/
+
+#MyWork {
+  margin-top: 25px;
+  padding-top: 1px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 25px;
+}
+
+#MyWork .cover {
+  display: flex;
+  justify-content: space-around;
+}
+
+#MyWork .custom-div {
+  justify-content: space-between;
+  width: 1000px;
+}
+
+#MyWork .custom-div .row {
+  display: flex;
+}
+
+#MyWork .custom-div .row .col1 img {
+  width: 400px;
+  height: 231px;
+  border-radius: 10px;
+}
+
+#MyWork .custom-div .row .col1 {
+  margin: 30px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateX(65%);
+  transition: opacity 1.5s, visibility 0s 1.5s, transform 1.5s;
+}
+
+#MyWork .custom-div .row:hover .col1 {
+  opacity: 100%;
+  width: 400px;
+  transform: translateX(10%);
+  transition-delay: 0.05s; /* Adjust the delay time as needed */
+}
+
+#MyWork .custom-div .row .col2 {
+  background: radial-gradient(transparent, rgb(0, 0, 0));
+  margin: 30px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: visible;
+  transform: translateX(-1%);
+  transition: opacity 1.5s, visibility 0s 1.5s, transform 1.5s;
+}
+
+#MyWork .custom-div .row:hover .col2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(10%);
+  transition-delay: 0.05s; /* Adjust the delay time as needed */
+}
+
+#MyWork .custom-div .row p {
+  display: none;
+  transition: display 1.5s;
+}
+
+#MyWork .custom-div .row:hover p {
+  margin: 30px;
+  width: 400px;
+  display: block;
+}
+
+/*--------------------------------Footer---------------*/
+
+#Footer {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 25px;
+}
+.custom-div1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: radial-gradient(transparent, rgb(0, 0, 0));
+}
+.col {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+}
+
+.custom-a {
+  border-radius: 5px;
+  padding: 4px;
+  border-color: #ff000000;
+  border-style: solid;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.custom-a:hover {
+  border-color: rgb(255, 0, 0);
+  transition: 0.5s;
+  background: linear-gradient(90deg, #000, #ff0000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 1s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+/*----------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+  font-family: Arial;
+}
+
+svg {
+  display: block;
+  font: 10.5em "Montserrat";
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: -100px;
+  margin-bottom: -50px;
+  margin-left: -1px;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #560d14;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #570101;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #bd0000;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: rgb(255, 0, 0);
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #fdb731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+/*----------------------------------------------------------*/
+span1 {
+  font-weight: bolder;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #ff0000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
