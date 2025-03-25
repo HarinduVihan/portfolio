@@ -260,6 +260,7 @@ span {
   transition: opacity 1.5s, visibility 0s 1.5s, transform 1.5s;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 #MyWork .custom-div .row:hover .col2 {
