@@ -258,6 +258,8 @@ span {
   visibility: visible;
   transform: translateX(-1%);
   transition: opacity 1.5s, visibility 0s 1.5s, transform 1.5s;
+  display: flex;
+  align-items: center;
 }
 
 #MyWork .custom-div .row:hover .col2 {
@@ -322,6 +324,7 @@ ul {
 
 .custom-a:hover {
   border-color: rgb(255, 0, 0);
+  border-width: 0.5px;
   transition: 0.5s;
   background: linear-gradient(90deg, #000, #ff0000, #000);
   background-repeat: no-repeat;
