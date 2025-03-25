@@ -153,13 +153,13 @@ span {
 
 #AboutMe .custom-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #AboutMe .custom-div .Skills,
 .Experience,
 .Education {
-  width: 400px;
+  width: 100%;
   height: 400px;
   margin: 25px;
   border-radius: 25px;
@@ -167,6 +167,14 @@ span {
   background-color: l;
   border-radius: 25px;
   background: radial-gradient(transparent, rgb(0, 0, 0));
+  align-items: center;
+}
+
+#AboutMe .custom-div .Skills .custom-innerdiv,
+.Experience .custom-innerdiv,
+.Education .custom-innerdiv {
+  padding: 20px;
+  text-align: left;
 }
 
 /*------------------languages---------------*/
@@ -310,7 +318,7 @@ span {
   width: 200px;
 }
 
-ul {
+.custom-ul {
   list-style: none;
 }
 
