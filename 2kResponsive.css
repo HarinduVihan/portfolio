@@ -1,0 +1,39 @@
+@media (min-width: 2068px) {
+  .custom-h1 {
+    font-size: 40px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .custom-a {
+    font-size: 20px;
+  }
+
+  /*------------------home-----------------*/
+  #home .custom-div {
+    margin-top: 450px;
+  }
+
+  .custom-h4 {
+    font-size: 25px;
+  }
+
+  .custom-p {
+    font-size: 20px;
+  }
+  /*------------------About me---------------*/
+  #AboutMe .custom-div .Skills .custom-innerdiv,
+  .Experience .custom-innerdiv,
+  .Education .custom-innerdiv {
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+  }
+}
