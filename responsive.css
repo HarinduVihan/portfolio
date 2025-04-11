@@ -109,9 +109,10 @@
   #AboutMe .custom-div .Skills,
   .Experience,
   .Education {
+    justify-self: center;
     width: 90%;
     height: 400px;
-    margin: 0px;
+    margin: 20px;
     border-radius: 25px;
     text-align: center;
     background-color: l;
@@ -126,9 +127,23 @@
     height: 1100px;
   }
   #Languages .icons {
+    justify-self: center;
     margin-left: 0px;
     margin-right: 0px;
     flex-direction: column;
+    width: 300px;
+  }
+
+  #Languages .icons img {
+    justify-self: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #Languages .icons img:hover {
+    margin: 30px;
+    margin-left: 75px;
+    margin-right: 0px;
   }
 
   /*------------------myWork---------------*/
