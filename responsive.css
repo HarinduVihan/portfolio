@@ -148,6 +148,7 @@
 
   /*------------------myWork---------------*/
   #MyWork .custom-div .row {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
   }
@@ -169,7 +170,8 @@
     width: 90%;
     opacity: 1;
     transform: translateX(0%);
-    padding-bottom: 50px;
+    padding-bottom: 25px;
+    margin-top: 15px;
   }
 
   #MyWork .custom-div .row:hover .col2 {
