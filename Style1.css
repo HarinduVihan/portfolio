@@ -60,6 +60,10 @@ html {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
+.custom-nav .material-icons {
+  display: none;
+}
+
 .custom-h1 {
   color: #fdfdfd;
   font-weight: bold;
