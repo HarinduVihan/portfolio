@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1350px) {
   .custom-body {
     margin-left: 10px;
     margin-right: 10px;
@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+  }
+  .custom-h1 {
+    margin-top: 15px;
   }
   .custom-nav {
     margin: 0;
@@ -23,6 +26,8 @@
     transition: 0.5s;
   }
   .custom-nav {
+    justify-self: center;
+    width: 90%;
     transition: 0.5s;
   }
   .custom-header {
@@ -86,7 +91,7 @@
   #home .custom-div {
     margin-top: 0px;
     margin-bottom: 0px;
-    background-image: url("img/Untitled\ image.png");
+    background-image: url("img/Untitled\ image1.png");
     padding-bottom: 250px;
     padding-top: 250px;
     justify-self: center;
@@ -104,6 +109,7 @@
   #AboutMe .custom-div {
     display: block;
     justify-content: space-evenly;
+    padding-bottom: 20px;
   }
 
   #AboutMe .custom-div .Skills,
@@ -155,23 +161,24 @@
   #MyWork .custom-div .row .col1 {
     margin: 0px;
     justify-self: center;
-    width: 90%;
+    width: 341px;
     transform: translateX(0%);
   }
 
   #MyWork .custom-div .row:hover .col1 {
-    width: 90%;
+    width: 341px;
     transform: translateX(0%);
   }
 
   #MyWork .custom-div .row .col2 {
     justify-self: center;
     margin: 0px;
-    width: 90%;
+    width: 341px;
     opacity: 1;
     transform: translateX(0%);
     padding-bottom: 25px;
     margin-top: 15px;
+    margin-bottom: 20px;
   }
 
   #MyWork .custom-div .row:hover .col2 {
