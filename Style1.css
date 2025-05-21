@@ -6,7 +6,7 @@
 .custom-body {
   margin-left: 50px;
   margin-right: 50px;
-  background-image: url("img/wanderer-of-the-ruined-path-ur-1920x1080.jpg");
+  background-image: url("img/abstract-cube-red-lights-150624.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -47,10 +47,12 @@ html {
   font-weight: bold;
   border-radius: 5px;
   transition: 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .custom-nav ul li a:hover {
-  border-color: rgb(255, 0, 0);
+  border-image: linear-gradient(90deg, #000, #ff0000, #000) 0 0 1 0;
   transition: 0.5s;
   background: linear-gradient(90deg, #000, #ff0000, #000);
   background-repeat: no-repeat;
@@ -88,6 +90,7 @@ span {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.752);
   border-radius: 25px;
+  overflow: hidden;
 }
 
 #home .custom-div {
@@ -119,7 +122,8 @@ span {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
 }
 .image img {
   position: absolute;
@@ -131,14 +135,50 @@ span {
 
 .image .imagecover {
   position: absolute;
-  width: 40vw;
-  height: 40vw;
+  width: 39vw;
+  height: 39vw;
   background: radial-gradient(transparent, rgb(0, 0, 0));
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  align-self: center;
+  /* overflow: hidden; */
   mix-blend-mode: soft-light;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.image:after,
+.image::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    #00000000,
+    #ff00009f,
+    #00000000
+  );
+  z-index: -1;
+  animation: 3s spin linear infinite;
+  border-radius: 50%;
+}
+
+.image::before {
+  filter: blur(1.5rem);
+  opacity: 1;
+}
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 /*------------------About me---------------*/
@@ -293,6 +333,26 @@ span {
   display: block;
 }
 
+.custom-a1 {
+  border-radius: 5px;
+  padding: 4px;
+  border-color: #ff000000;
+  border-style: solid;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.custom-a1:hover {
+  border-image: linear-gradient(90deg, #ff0000, #020202, #fc0000) 1;
+  border-width: 0.5px;
+  transition: 0.5s;
+  background: linear-gradient(90deg, #000, #ff0000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 1s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
 /*--------------------------------Footer---------------*/
 
 #Footer {
@@ -336,7 +396,7 @@ span {
 }
 
 .custom-a:hover {
-  border-color: rgb(255, 0, 0);
+  border-image: linear-gradient(90deg, #000, #ff0000, #000) 1 0 1 0;
   border-width: 0.5px;
   transition: 0.5s;
   background: linear-gradient(90deg, #000, #ff0000, #000);
