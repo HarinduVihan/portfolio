@@ -38,5 +38,8 @@
   }
 }
 
-/* @media (max-width: 950px) {
-} */
+@media (min-width: 1350px) {
+  #home {
+    max-height: 43vw;
+  }
+}

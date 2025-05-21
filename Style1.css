@@ -6,7 +6,7 @@
 .custom-body {
   margin-left: 50px;
   margin-right: 50px;
-  background-image: url("img/wanderer-of-the-ruined-path-ur-1920x1080.jpg");
+  background-image: url("img/abstract-cube-red-lights-150624.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -90,6 +90,7 @@ span {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.752);
   border-radius: 25px;
+  overflow: hidden;
 }
 
 #home .custom-div {
@@ -121,7 +122,8 @@ span {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  position: relative;
 }
 .image img {
   position: absolute;
@@ -133,14 +135,50 @@ span {
 
 .image .imagecover {
   position: absolute;
-  width: 40vw;
-  height: 40vw;
+  width: 39vw;
+  height: 39vw;
   background: radial-gradient(transparent, rgb(0, 0, 0));
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  align-self: center;
+  /* overflow: hidden; */
   mix-blend-mode: soft-light;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.image:after,
+.image::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    #00000000,
+    #ff00009f,
+    #00000000
+  );
+  z-index: -1;
+  animation: 3s spin linear infinite;
+  border-radius: 50%;
+}
+
+.image::before {
+  filter: blur(1.5rem);
+  opacity: 1;
+}
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 /*------------------About me---------------*/
