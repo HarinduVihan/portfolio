@@ -47,10 +47,12 @@ html {
   font-weight: bold;
   border-radius: 5px;
   transition: 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .custom-nav ul li a:hover {
-  border-color: rgb(255, 0, 0);
+  border-image: linear-gradient(90deg, #000, #ff0000, #000) 0 0 1 0;
   transition: 0.5s;
   background: linear-gradient(90deg, #000, #ff0000, #000);
   background-repeat: no-repeat;
@@ -293,6 +295,26 @@ span {
   display: block;
 }
 
+.custom-a1 {
+  border-radius: 5px;
+  padding: 4px;
+  border-color: #ff000000;
+  border-style: solid;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.custom-a1:hover {
+  border-image: linear-gradient(90deg, #ff0000, #020202, #fc0000) 1;
+  border-width: 0.5px;
+  transition: 0.5s;
+  background: linear-gradient(90deg, #000, #ff0000, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 1s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
 /*--------------------------------Footer---------------*/
 
 #Footer {
@@ -336,7 +358,7 @@ span {
 }
 
 .custom-a:hover {
-  border-color: rgb(255, 0, 0);
+  border-image: linear-gradient(90deg, #000, #ff0000, #000) 1 0 1 0;
   border-width: 0.5px;
   transition: 0.5s;
   background: linear-gradient(90deg, #000, #ff0000, #000);
