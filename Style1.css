@@ -353,6 +353,12 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+.viewMore {
+  background-color: #00000000;
+  padding: 20px;
+  margin: 20px;
+}
 /*--------------------------------Footer---------------*/
 
 #Footer {
