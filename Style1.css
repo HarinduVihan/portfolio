@@ -369,18 +369,26 @@ span {
 
 .projects {
   margin: 20px;
+  overflow: hidden;
+  position: relative;
 }
 /*carousel*/
 .carousel-projects {
   width: 100vw;
-  height: 100vh;
+  height: 35vh;
   overflow: hidden;
-  position: relative;
+  margin-bottom: -50px;
+  /* position: relative; */
 }
 
 .carousel-projects .list .item {
   position: absolute;
   inset: 0 0 0 0;
+}
+
+.carousel-projects .list .item img {
+  width: 80%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -401,6 +409,10 @@ span {
 .carousel-projects .list .item .content-project .author {
   font-weight: bold;
   letter-spacing: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ccc9c94d;
+  backdrop-filter: blur(5px);
 }
 
 .carousel-projects .list .item .content-project .title,
@@ -409,9 +421,15 @@ span {
   font-size: 5em;
   line-height: 1.3em;
 }
-
 .carousel-projects .list .item .content-project .topic {
   color: #f1683a;
+}
+
+.carousel-projects .list .item .content-project .des {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ccc9c94d;
+  backdrop-filter: blur(5px);
 }
 
 .carousel-projects .list .item .content-project .buttons {
@@ -443,11 +461,16 @@ span {
   position: absolute;
   bottom: 50px;
   left: 50%;
-  width: max-content;
+  /* width: max-content; */
+  width: 100%;
   z-index: 100;
   display: flex;
   gap: 20px;
   text-align: left;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ccc9c94d;
+  backdrop-filter: blur(5px);
 }
 
 .thumbnail .item {
@@ -498,6 +521,7 @@ span {
   font-weight: bold;
   font-size: large;
   transition: 0.5s;
+  z-index: 100;
 }
 
 .arrows button:hover {
@@ -505,6 +529,85 @@ span {
   color: #555;
 }
 
+.carousel-projects.next .list .item:nth-child(1) {
+  z-index: 1;
+}
+
+.carousel-projects .list .item:nth-child(1) .author,
+.carousel-projects .list .item:nth-child(1) .title,
+.carousel-projects .list .item:nth-child(1) .topic,
+.carousel-projects .list .item:nth-child(1) .des,
+.carousel-projects .list .item:nth-child(1) .buttons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.carousel-projects .list .item:nth-child(1) .title {
+  animation-delay: 1.3s;
+}
+.carousel-projects .list .item:nth-child(1) .topic {
+  animation-delay: 1.4s;
+}
+.carousel-projects .list .item:nth-child(1) .des {
+  animation-delay: 1.5s;
+}
+.carousel-projects .list .item:nth-child(1) .buttons {
+  animation-delay: 1.6s;
+}
+
+/*effect next click*/
+.carousel-projects.next .list .item:nth-child(1) img {
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  border-radius: 20px;
+  animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage {
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+}
+
+.thumbnail .item:nth-last-child(1) {
+  width: 0;
+  overflow: hidden;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+  to {
+    width: 150px;
+  }
+}
+
+.thumbnail {
+  transform: translateX(150px);
+  animation: transformThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+  to {
+    transform: translateX(0);
+  }
+}
 /*--------------------------------Footer---------------*/
 
 #Footer {
