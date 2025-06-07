@@ -458,8 +458,14 @@
         <div id="moreMyWork">
           <h2 class="custom-h1"><span>P</span>rojects</h2>
           <div class="projects"></div>
+          <div>
+            <button id="viewLess" class="custom-a viewMore">
+              <span>V</span>iew<span>L</span>ess<span>P</span>rojects
+            </button>
+          </div>
         </div>
       </section>
+      <!---------------------------------------------->
     </main>
 
     <!--------------------------------Footer-------------->
@@ -542,6 +548,17 @@
           $("#Languages").hide("slow");
           $("#MyWork").hide("slow");
           $("#moreMyWork").show("slow");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#viewLess").click(function () {
+          //$("p").fadeToggle("slow");
+          $("#home").show("slow");
+          $("#AboutMe").show("slow");
+          $("#Languages").show("slow");
+          $("#MyWork").show("slow");
+          $("#moreMyWork").hide("slow");
         });
       });
     </script>

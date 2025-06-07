@@ -359,6 +359,13 @@ span {
   padding: 20px;
   margin: 20px;
 }
+/*----------------------------More My work-----------------------------------------------------*/
+
+#moreMyWork {
+  display: none;
+  text-align: center;
+}
+
 /*--------------------------------Footer---------------*/
 
 #Footer {
