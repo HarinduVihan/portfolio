@@ -543,6 +543,8 @@
       $(document).ready(function () {
         $("#viewMore").click(function () {
           //$("p").fadeToggle("slow");
+          sideMenu;
+          $("#sideMenu").hide("slow");
           $("#home").hide("slow");
           $("#AboutMe").hide("slow");
           $("#Languages").hide("slow");
@@ -554,6 +556,7 @@
       $(document).ready(function () {
         $("#viewLess").click(function () {
           //$("p").fadeToggle("slow");
+          $("#sideMenu").show("slow");
           $("#home").show("slow");
           $("#AboutMe").show("slow");
           $("#Languages").show("slow");
