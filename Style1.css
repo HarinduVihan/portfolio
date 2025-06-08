@@ -376,7 +376,7 @@ span {
 /*carousel*/
 .carousel-projects {
   width: 100vw;
-  height: 80vh;
+  height: 85vh;
   overflow: hidden;
   /* margin-bottom: -50px; */
   position: relative;
@@ -456,7 +456,21 @@ span {
   justify-content: center;
 }
 
-.carousel-projects .list .item .content-project .buttons :nth-child(2) {
+.carousel-projects .list .item .content-project .buttons a {
+  border: none;
+  background-color: #ff0000d3;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-projects .list .item .content-project .buttons :nth-child(2),
+.carousel-projects .list .item .content-project .buttons :nth-child(3),
+.carousel-projects .list .item .content-project .buttons :nth-child(4),
+.carousel-projects .list .item .content-project .buttons :nth-child(5) {
   background-color: transparent;
   color: #000000;
   border: 1px solid #ff0000;
