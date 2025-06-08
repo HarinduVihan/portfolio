@@ -660,6 +660,30 @@ span {
 .carousel-projects.prev .arrows button {
   pointer-events: none;
 }
+
+/*time*/
+
+.time {
+  width: 0%;
+  height: 5px;
+  background-color: #ff0000;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.carousel-projects.next .time,
+.carousel-projects.prev .time {
+  width: 100%;
+  animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+  to {
+    width: 0;
+  }
+}
 /*--------------------------------Footer---------------*/
 
 #Footer {
