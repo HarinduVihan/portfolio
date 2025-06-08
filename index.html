@@ -557,8 +557,8 @@
          
           <!------arrows---------->
           <div class="arrows">
-            <button id="prev1">&#10094</button>
-            <button id="next1">&#10095</button>
+            <button id="prev">&#10094</button>
+            <button id="next">&#10095</button>
           </div>
           <div class="time"></div>
           <div>
@@ -667,6 +667,29 @@
           $("#moreMyWork").hide("slow");
         });
       });
+    </script>
+
+    <script>
+      let nextDom = document.getElementById('next');
+      let prevDom = document.getElementById('prev');
+      let carouselDom = document.querySelector('.carousel-projects');
+      let listItemDom = document.querySelector('.carousel-projects .list');
+      let thumbnailDom = document.querySelector('.carousel-projects .thumbnail');
+
+      nextDom.onclick = function(){
+        showSlider('next');
+      }
+
+      function showSlider(type){
+        let itemSlider = document.querySelectorAll('.carousel-projects .list .item');
+        let itemThumbnail = document.querySelectorAll('.carousel-projects .thumbnail .item');
+
+        if(type === 'next'){
+          listItemDom.appendChild(itemSlider[0]);
+          thumbnailDom.appendChild(itemThumbnail[0]);
+          carouselDom.classList.add('next');
+        }
+      }
     </script>
   </body>
 </html>
