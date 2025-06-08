@@ -188,12 +188,15 @@
   /*More my work*/
 
   .carousel-projects .list .item .content-project {
-    padding-right: 30px;
-    width: 50%;
+    padding: 0;
+    width: 100%;
   }
 
   .carousel-projects .list .item .content-project .title {
     font-size: 30px;
+  }
+  .carousel-projects .list .item .content-project .topic {
+    font-size: 40px;
   }
   /*--------------------------------Footer---------------*/
   .custom-div1 {
