@@ -596,7 +596,7 @@ span {
 @keyframes showThumbnail {
   to {
     width: 150px;
-    opacity: 1;
+    /* opacity: 1; */
   }
 }
 
