@@ -188,10 +188,9 @@
   /*More my work*/
 
   .carousel-projects .list .item .content-project {
-    padding-right: 0;
+    padding-right: 30px;
+    width: 50%;
   }
-
-  /*More my work*/
 
   .carousel-projects .list .item .content-project .title {
     font-size: 30px;

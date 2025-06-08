@@ -476,8 +476,8 @@
                       molestias culpa?
                     </div>
                     <div class="buttons">
-                      <button>See More</button>
-                      <button>Subcribe</button>
+                      <button class="custom-a">See More</button>
+                      <button class="custom-a">Subcribe</button>
                     </div>
                   </div>
                 </div>
@@ -498,8 +498,8 @@
                       molestias culpa?
                     </div>
                     <div class="buttons">
-                      <button>See More</button>
-                      <button>Subcribe</button>
+                      <button class="custom-a">See More</button>
+                      <button class="custom-a">Subcribe</button>
                     </div>
                   </div>
                 </div>
@@ -520,8 +520,8 @@
                       molestias culpa?
                     </div>
                     <div class="buttons">
-                      <button>See More</button>
-                      <button>Subcribe</button>
+                      <button class="custom-a">See More</button>
+                      <button class="custom-a">Subcribe</button>
                     </div>
                   </div>
                 </div>
@@ -557,8 +557,8 @@
          
           <!------arrows---------->
           <div class="arrows">
-            <button id="prev">&#10094</button>
-            <button id="next">&#10095</button>
+            <button id="prev" class="custom-a">&#10094</button>
+            <button id="next" class="custom-a">&#10095</button>
           </div>
           <div class="time"></div>
           <div>
@@ -685,7 +685,11 @@
       }
 
       let timeRunning = 3000;
+      let timeAutoNext = 10000;
       let runTimeOut;
+      let runAutoRun = setTimeout(()=>{
+          nextDom.click();
+        },timeAutoNext);
 
       function showSlider(type){
         let itemSlider = document.querySelectorAll('.carousel-projects .list .item');
@@ -707,6 +711,11 @@
           carouselDom.classList.remove('next');
           carouselDom.classList.remove('prev');
         },timeRunning)
+
+        clearTimeout(runAutoRun);
+        runAutoRun = setTimeout(()=>{
+          nextDom.click();
+        },timeAutoNext);
       }
     </script>
   </body>

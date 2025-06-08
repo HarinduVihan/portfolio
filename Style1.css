@@ -412,7 +412,7 @@ span {
   letter-spacing: 10px;
   padding: 10px;
   border-radius: 15px;
-  background-color: #ccc9c94d;
+  background-color: #ff00004d;
   backdrop-filter: blur(5px);
 }
 
@@ -423,13 +423,13 @@ span {
   line-height: 1.3em;
 }
 .carousel-projects .list .item .content-project .topic {
-  color: #f1683a;
+  color: #ff0000;
 }
 
 .carousel-projects .list .item .content-project .des {
   padding: 10px;
   border-radius: 15px;
-  background-color: #ccc9c94d;
+  background-color: #ff00004d;
   backdrop-filter: blur(5px);
 }
 
@@ -443,17 +443,17 @@ span {
 
 .carousel-projects .list .item .content-project button {
   border: none;
-  background-color: #eee;
+  background-color: #ff0000d3;
   letter-spacing: 3px;
-  font-family: Poppins;
   font-weight: 500;
   color: #000;
+  font-weight: bold;
 }
 
 .carousel-projects .list .item .content-project button:nth-child(2) {
   background-color: transparent;
-  color: #eee;
-  border: 1px solid #eee;
+  color: #000000;
+  border: 1px solid #ff0000;
 }
 
 /*thumbnail*/
@@ -470,7 +470,7 @@ span {
   text-align: left;
   padding: 20px;
   border-radius: 15px;
-  background-color: #ccc9c94d;
+  background-color: #ff00004d;
   backdrop-filter: blur(5px);
 }
 
@@ -479,6 +479,7 @@ span {
   height: 220px;
   flex-shrink: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .thumbnail .item img {
@@ -490,9 +491,14 @@ span {
 
 .thumbnail .item .content-project {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 0px;
+  left: 0px;
   right: 10px;
+  background-color: #8181814d;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 10px;
 }
 
 .thumbnail .item .content-project .title {
@@ -515,7 +521,7 @@ span {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #eee4;
+  background-color: rgba(155, 1, 1, 0.616);
   border: none;
   font-family: monospace;
   color: #fff;
@@ -523,6 +529,7 @@ span {
   font-size: large;
   transition: 0.5s;
   z-index: 100;
+  backdrop-filter: blur(5px);
 }
 
 .arrows button:hover {
