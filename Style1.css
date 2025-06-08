@@ -409,7 +409,7 @@ span {
 
 .carousel-projects .list .item .content-project .author {
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
   padding: 10px;
   border-radius: 15px;
   background-color: #ff00004d;
@@ -431,6 +431,10 @@ span {
   border-radius: 15px;
   background-color: #ff00004d;
   backdrop-filter: blur(5px);
+  color: #000;
+  font-weight: bold;
+  height: 130px;
+  overflow-y: auto;
 }
 
 .carousel-projects .list .item .content-project .buttons {
@@ -441,16 +445,18 @@ span {
   margin-top: 20px;
 }
 
-.carousel-projects .list .item .content-project button {
+.carousel-projects .list .item .content-project .buttons a {
   border: none;
   background-color: #ff0000d3;
   letter-spacing: 3px;
   font-weight: 500;
   color: #000;
   font-weight: bold;
+  text-align: center;
+  justify-content: center;
 }
 
-.carousel-projects .list .item .content-project button:nth-child(2) {
+.carousel-projects .list .item .content-project .buttons :nth-child(2) {
   background-color: transparent;
   color: #000000;
   border: 1px solid #ff0000;
