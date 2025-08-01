@@ -353,6 +353,364 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+.viewMore {
+  background-color: #00000000;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*----------------------------More My work-----------------------------------------------------*/
+
+#moreMyWork {
+  display: none;
+  text-align: center;
+}
+
+.projects {
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+/*carousel*/
+.carousel-projects {
+  width: 100vw;
+  height: 85vh;
+  overflow: hidden;
+  /* margin-bottom: -50px; */
+  position: relative;
+}
+
+.carousel-projects .list .item {
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+.carousel-projects .list .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-projects .list .item .content-project {
+  position: absolute;
+  top: 20%;
+  width: 1140px;
+  max-width: 80%;
+  left: 40%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 5px 10px #0004;
+  text-align: left;
+}
+
+.carousel-projects .list .item .content-project .author {
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ff00004d;
+  backdrop-filter: blur(5px);
+}
+
+.carousel-projects .list .item .content-project .title,
+.carousel-projects .list .item .content-project .topic {
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1.3em;
+}
+.carousel-projects .list .item .content-project .topic {
+  color: #ff0000;
+}
+
+.carousel-projects .list .item .content-project .des {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ff00004d;
+  backdrop-filter: blur(5px);
+  color: #000;
+  font-weight: bold;
+  height: 130px;
+  overflow-y: auto;
+}
+
+.carousel-projects .list .item .content-project .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 40px;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.carousel-projects .list .item .content-project .buttons a {
+  border: none;
+  background-color: #ff0000d3;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-projects .list .item .content-project .buttons a {
+  border: none;
+  background-color: #ff0000d3;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-projects .list .item .content-project .buttons :nth-child(2),
+.carousel-projects .list .item .content-project .buttons :nth-child(3),
+.carousel-projects .list .item .content-project .buttons :nth-child(4),
+.carousel-projects .list .item .content-project .buttons :nth-child(5) {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #ff0000;
+}
+
+/*thumbnail*/
+
+.thumbnail {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  /* width: max-content; */
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  gap: 20px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ff00004d;
+  backdrop-filter: blur(5px);
+}
+
+.thumbnail .item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.thumbnail .item .content-project {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 10px;
+  background-color: #8181814d;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.thumbnail .item .content-project .title {
+  font-weight: bold;
+}
+
+/* arrow */
+.arrows {
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(155, 1, 1, 0.616);
+  border: none;
+  font-family: monospace;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  transition: 0.5s;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+.arrows button:hover {
+  background-color: #eee;
+  color: #555;
+}
+
+.carousel-projects .list .item:nth-child(1) {
+  z-index: 1;
+}
+
+.carousel-projects .list .item:nth-child(1) .author,
+.carousel-projects .list .item:nth-child(1) .title,
+.carousel-projects .list .item:nth-child(1) .topic,
+.carousel-projects .list .item:nth-child(1) .des,
+.carousel-projects .list .item:nth-child(1) .buttons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.carousel-projects .list .item:nth-child(1) .title {
+  animation-delay: 1.2s;
+}
+.carousel-projects .list .item:nth-child(1) .topic {
+  animation-delay: 1.4s;
+}
+.carousel-projects .list .item:nth-child(1) .des {
+  animation-delay: 1.6s;
+}
+.carousel-projects .list .item:nth-child(1) .buttons {
+  animation-delay: 1.8s;
+}
+
+/*effect next click*/
+.carousel-projects.next .list .item:nth-child(1) img {
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  left: 51%;
+  bottom: 70px;
+  border-radius: 20px;
+  animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage {
+  to {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+}
+
+.carousel-projects.next .thumbnail .item:nth-last-child(1) {
+  width: 0;
+  overflow: hidden;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes showThumbnail {
+  to {
+    width: 150px;
+    /* opacity: 1; */
+  }
+}
+
+.carousel-projects.next .thumbnail {
+  transform: translateX(150px);
+  animation: transformThumbnail 0.5s linear 1 forwards;
+}
+
+@keyframes transformThumbnail {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/*effect prev click */
+.carousel-projects.prev .list .item:nth-child(2) {
+  z-index: 2;
+}
+
+.carousel-projects.prev .list .item:nth-child(2) img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: outImage 0.5s linear 1 forwards;
+}
+
+@keyframes outImage {
+  to {
+    width: 150px;
+    height: 220px;
+    border-radius: 20px;
+    left: 51%;
+    bottom: 65px;
+  }
+}
+
+.carousel-projects.prev .thumbnail .item:nth-child(1) {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.carousel-projects.prev .list .item:nth-child(2) .author,
+.carousel-projects.prev .list .item:nth-child(2) .title,
+.carousel-projects.prev .list .item:nth-child(2) .topic,
+.carousel-projects.prev .list .item:nth-child(2) .des,
+.carousel-projects.prev .list .item:nth-child(2) .buttons {
+  animation: contentOut 1.5s linear 1 forwards;
+}
+
+@keyframes contentOut {
+  to {
+    transform: translateY(150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.carousel-projects.next .arrows button,
+.carousel-projects.prev .arrows button {
+  pointer-events: none;
+}
+
+/*time*/
+
+.time {
+  width: 0%;
+  height: 5px;
+  background-color: #ff0000;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.carousel-projects.next .time,
+.carousel-projects.prev .time {
+  width: 100%;
+  animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+  to {
+    width: 0;
+  }
+}
 /*--------------------------------Footer---------------*/
 
 #Footer {

@@ -36,6 +36,15 @@
     padding-right: 100px;
     text-align: left;
   }
+
+  /*---MoreMywork-------------*/
+  .carousel-projects .list .item .content-project {
+    padding-right: 20%;
+  }
+
+  .carousel-projects .list .item .content-project .des {
+    height: 100%;
+  }
 }
 
 @media (min-width: 1350px) {
