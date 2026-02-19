@@ -129,10 +129,10 @@
   }
 
   /*------------------languages---------------*/
-  #Languages {
+  #tech-stack {
     height: 1250px;
   }
-  #Languages .icons {
+  #tech-stack .icons {
     justify-self: center;
     margin-left: 0px;
     margin-right: 0px;
@@ -140,13 +140,14 @@
     width: 300px;
   }
 
-  #Languages .icons img {
+  #tech-stack .icons img {
+    margin: 20px;
     justify-self: center;
     margin-left: 100px;
     margin-right: 100px;
   }
 
-  #Languages .icons img:hover {
+  #tech-stack .icons img:hover {
     margin: 30px;
     margin-left: 75px;
     margin-right: 0px;
