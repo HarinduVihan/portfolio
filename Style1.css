@@ -221,10 +221,9 @@ span {
   text-align: left;
 }
 
-/*------------------languages---------------*/
+/*------------------Tech Stack---------------*/
 
-#Languages {
-  margin-top: 25px;
+#tech-stack {
   padding-top: 1px;
   text-align: center;
   margin-top: 20px;
@@ -232,7 +231,7 @@ span {
   border-radius: 25px;
 }
 
-#Languages .icons {
+#tech-stack .icons {
   height: 250px;
   border-radius: 25px;
   margin-left: 150px;
@@ -241,13 +240,13 @@ span {
   justify-content: space-between;
 }
 
-#Languages .icons img {
-  margin: 20px;
+#tech-stack .icons img {
+  margin: 0 20px 0 20px;
   width: 100px;
   transition: 0.5s;
 }
 
-#Languages .icons img:hover {
+#tech-stack .icons img:hover {
   margin: 30px;
   width: 150px;
   transition: 0.5s;
@@ -290,7 +289,10 @@ span {
   overflow: hidden;
   border-radius: 10px;
   transform: translateX(65%);
-  transition: opacity 1.5s, visibility 0s 1.5s, transform 1.5s;
+  transition:
+    opacity 1.5s,
+    visibility 0s 1.5s,
+    transform 1.5s;
 }
 
 #MyWork .custom-div .row:hover .col1 {
@@ -309,7 +311,10 @@ span {
   opacity: 0;
   visibility: visible;
   transform: translateX(-1%);
-  transition: opacity 1.5s, visibility 0s 1.5s, transform 1.5s;
+  transition:
+    opacity 1.5s,
+    visibility 0s 1.5s,
+    transform 1.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
