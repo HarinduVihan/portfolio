@@ -223,7 +223,7 @@ span {
 
 /*------------------Tech Stack---------------*/
 
-#tech-stack {
+#TechStack {
   padding-top: 1px;
   text-align: center;
   margin-top: 20px;
@@ -231,7 +231,7 @@ span {
   border-radius: 25px;
 }
 
-#tech-stack .icons {
+#TechStack .icons {
   height: 250px;
   border-radius: 25px;
   margin-left: 150px;
@@ -240,13 +240,13 @@ span {
   justify-content: space-between;
 }
 
-#tech-stack .icons img {
+#TechStack .icons img {
   margin: 0 20px 0 20px;
   width: 100px;
   transition: 0.5s;
 }
 
-#tech-stack .icons img:hover {
+#TechStack .icons img:hover {
   margin: 30px;
   width: 150px;
   transition: 0.5s;
