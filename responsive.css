@@ -48,9 +48,9 @@
 
   .custom-nav ul li {
     list-style: none;
-    padding-left: 20px;
     padding-right: 0px;
     margin-top: 20px;
+    padding-left: 0;
   }
 
   .custom-nav .material-icons {
@@ -129,7 +129,7 @@
   }
 
   /*------------------languages---------------*/
-  #tech-stack {
+  #TechStack {
     height: 1250px;
     overflow-y: scroll;
     display: flex;
@@ -137,7 +137,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  #tech-stack .icons {
+  #TechStack .icons {
     justify-self: center;
     margin-left: 0px;
     margin-right: 0px;
@@ -146,14 +146,14 @@
     height: 1250px;
   }
 
-  #tech-stack .icons img {
+  #TechStack .icons img {
     margin: 20px;
     justify-self: center;
     margin-left: 100px;
     margin-right: 100px;
   }
 
-  #tech-stack .icons img:hover {
+  #TechStack .icons img:hover {
     margin: 30px;
     margin-left: 75px;
     margin-right: 0px;
